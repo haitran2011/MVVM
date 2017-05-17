@@ -1,22 +1,39 @@
 //
 //  AppDelegate.swift
-//  MVVM
+//  MagadiHome
 //
-//  Created by Mustafa Ezzat on 5/17/17.
-//  Copyright © 2017 Github. All rights reserved.
+//  Created by Mustafa Ezzat on 5/6/17.
+//  Copyright © 2017 Waqood. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
+struct AppUtility {
+    
+    static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.orientationLock = orientation
+        }
+    }
+    
+    /// OPTIONAL Added method to adjust lock and rotate to the desired orientation
+    static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
+        self.lockOrientation(orientation)
+        UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var orientationLock = UIInterfaceOrientationMask.all
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        barColor()
+        setLanguage()
         return true
     }
 
@@ -87,6 +104,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
+    }
+    func barColor(){
+        UITabBar.appearance().barTintColor = SharedManager.sharedInstance.getColor(with: AppConstant.Colors.Blue)
+    }
+    
+    func setLanguage() {
+        L102Language.setAppleLAnguageTo(lang: "ar")
+        UIView.appearance().semanticContentAttribute = .forceRightToLeft
     }
 
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSans-regular.ttf">
+            <string>NeoSansW23</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SuperMarketCell" id="KGk-i7-Jjw" customClass="SuperMarketCell" customModule="MagadiHome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-cX-upK">
+                        <rect key="frame" x="12" y="8" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="GfB-aE-q2J"/>
+                            <constraint firstAttribute="width" constant="64" id="ln4-NW-oIR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syD-o9-KBd">
+                        <rect key="frame" x="80" y="8" width="208" height="64"/>
+                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="go" translatesAutoresizingMaskIntoConstraints="NO" id="Kw5-Ey-dKC">
+                        <rect key="frame" x="288" y="28" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="1nJ-bT-2Eh"/>
+                            <constraint firstAttribute="width" constant="24" id="xM3-BS-be9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hVC-cX-upK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="0FN-nz-iKQ"/>
+                    <constraint firstItem="syD-o9-KBd" firstAttribute="leading" secondItem="hVC-cX-upK" secondAttribute="trailing" constant="4" id="8vn-8f-c1u"/>
+                    <constraint firstItem="hVC-cX-upK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hrc-aS-gAb"/>
+                    <constraint firstItem="Kw5-Ey-dKC" firstAttribute="leading" secondItem="syD-o9-KBd" secondAttribute="trailing" id="SFh-q7-aXt"/>
+                    <constraint firstAttribute="trailing" secondItem="Kw5-Ey-dKC" secondAttribute="trailing" constant="8" id="SiM-iQ-Kvq"/>
+                    <constraint firstItem="syD-o9-KBd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Vml-8Q-d1j"/>
+                    <constraint firstAttribute="bottom" secondItem="syD-o9-KBd" secondAttribute="bottom" constant="8" id="Z69-wI-mXu"/>
+                    <constraint firstItem="Kw5-Ey-dKC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wsO-1L-phv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goImage" destination="Kw5-Ey-dKC" id="fNM-yF-sga"/>
+                <outlet property="logoImage" destination="hVC-cX-upK" id="sZo-Cu-GLf"/>
+                <outlet property="name" destination="syD-o9-KBd" id="NMR-Ib-Ei4"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="go" width="24" height="24"/>
+    </resources>
+</document>

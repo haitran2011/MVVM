@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSans-regular.ttf">
+            <string>NeoSansW23</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CountryCell" id="gTV-IL-0wX" customClass="CountryCell" customModule="MagadiHome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kvh-xG-ghA">
+                        <rect key="frame" x="14" y="4" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="1Ak-Nn-xCl"/>
+                            <constraint firstAttribute="width" constant="64" id="ab9-4s-0d7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="32"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الإمارات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CON-4J-Rxf">
+                        <rect key="frame" x="0.0" y="68" width="92" height="36"/>
+                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="5tM-do-7xP">
+                        <rect key="frame" x="34" y="110" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Lcd-IL-RUu"/>
+                            <constraint firstAttribute="height" constant="24" id="s7N-C0-jxj"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CON-4J-Rxf" secondAttribute="trailing" id="650-ae-rDo"/>
+                <constraint firstAttribute="bottom" secondItem="5tM-do-7xP" secondAttribute="bottom" constant="6" id="8eP-i8-6sA"/>
+                <constraint firstItem="5tM-do-7xP" firstAttribute="top" secondItem="CON-4J-Rxf" secondAttribute="bottom" constant="6" id="F1V-Uf-raK"/>
+                <constraint firstItem="Kvh-xG-ghA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="FOr-e1-KQ2"/>
+                <constraint firstItem="CON-4J-Rxf" firstAttribute="top" secondItem="Kvh-xG-ghA" secondAttribute="bottom" id="Vaa-TZ-tIc"/>
+                <constraint firstItem="Kvh-xG-ghA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZZc-Rd-4Pb"/>
+                <constraint firstItem="5tM-do-7xP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dN1-LV-iv2"/>
+                <constraint firstItem="CON-4J-Rxf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m4k-5j-jt1"/>
+            </constraints>
+            <connections>
+                <outlet property="checkImage" destination="5tM-do-7xP" id="TbP-XO-bA4"/>
+                <outlet property="imageView" destination="Kvh-xG-ghA" id="IL1-Pp-Hu0"/>
+                <outlet property="name" destination="CON-4J-Rxf" id="YD2-sS-Cys"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check" width="24" height="24"/>
+    </resources>
+</document>

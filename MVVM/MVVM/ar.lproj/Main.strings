@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "رسوم التوصيل"; ObjectID = "2Sq-Z9-p1K"; */
+"2Sq-Z9-p1K.text" = "رسوم التوصيل";
+
+/* Class = "UIButton"; normalTitle = "تحديد"; ObjectID = "5X8-wI-G3C"; */
+"5X8-wI-G3C.normalTitle" = "تحديد";
+
+/* Class = "UINavigationItem"; title = "سلة المشتريات"; ObjectID = "6Nj-gW-Ayh"; */
+"6Nj-gW-Ayh.title" = "سلة المشتريات";
+
+/* Class = "UINavigationItem"; title = "المجمعات"; ObjectID = "C2a-DK-Ll5"; */
+"C2a-DK-Ll5.title" = "المجمعات";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "FDT-fT-kxH"; */
+"FDT-fT-kxH.title" = "Item";
+
+/* Class = "UILabel"; text = "المجموع الكلي: ٠ ر٠س"; ObjectID = "Lfd-tm-VJ4"; */
+"Lfd-tm-VJ4.text" = "المجموع الكلي: ٠ ر٠س";
+
+/* Class = "UIButton"; normalTitle = "نفذ الطلب"; ObjectID = "Rwo-bL-ec3"; */
+"Rwo-bL-ec3.normalTitle" = "نفذ الطلب";
+
+/* Class = "UILabel"; text = "١١ ر.س"; ObjectID = "Vzp-55-1WD"; */
+"Vzp-55-1WD.text" = "١١ ر.س";
+
+/* Class = "UIBarButtonItem"; title = "        "; ObjectID = "Xdy-C5-G24"; */
+"Xdy-C5-G24.title" = "        ";
+
+/* Class = "UILabel"; text = "الكل"; ObjectID = "bRb-Wx-S2E"; */
+"bRb-Wx-S2E.text" = "الكل";
+
+/* Class = "UILabel"; text = "١١ ر.س"; ObjectID = "bl1-FY-ONd"; */
+"bl1-FY-ONd.text" = "١١ ر.س";
+
+/* Class = "UIBarButtonItem"; title = "         "; ObjectID = "cJw-tl-3xu"; */
+"cJw-tl-3xu.title" = "         ";
+
+/* Class = "UINavigationItem"; title = "الأقسام"; ObjectID = "cQ5-aB-Xet"; */
+"cQ5-aB-Xet.title" = "الأقسام";
+
+/* Class = "UINavigationItem"; title = "الدولة"; ObjectID = "cgQ-dY-RDX"; */
+"cgQ-dY-RDX.title" = "الدولة";
+
+/* Class = "UILabel"; text = "المجموع"; ObjectID = "dAc-Dp-ghh"; */
+"dAc-Dp-ghh.text" = "المجموع";
+
+/* Class = "UILabel"; text = "قائمة الطلبات"; ObjectID = "j2y-LX-11R"; */
+"j2y-LX-11R.text" = "قائمة الطلبات";
+
+/* Class = "UIButton"; normalTitle = "نفذ الطلب"; ObjectID = "kmT-nM-kR2"; */
+"kmT-nM-kR2.normalTitle" = "نفذ الطلب";
+
+/* Class = "UINavigationItem"; title = "المنتجات"; ObjectID = "mjH-g1-Gfz"; */
+"mjH-g1-Gfz.title" = "المنتجات";
+
+/* Class = "UILabel"; text = "التالي"; ObjectID = "oAb-s3-FJw"; */
+"oAb-s3-FJw.text" = "التالي";
+
+/* Class = "UILabel"; text = "١١ ر.س"; ObjectID = "oT8-H4-bLc"; */
+"oT8-H4-bLc.text" = "١١ ر.س";
+
+/* Class = "UILabel"; text = "المجموع النهائي"; ObjectID = "uQi-07-xmi"; */
+"uQi-07-xmi.text" = "المجموع النهائي";
+
+/* Class = "UILabel"; text = "العدد"; ObjectID = "v8a-l0-Aa0"; */
+"v8a-l0-Aa0.text" = "العدد";
