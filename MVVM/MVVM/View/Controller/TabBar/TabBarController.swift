@@ -3,7 +3,7 @@
 //  Nashr
 //
 //  Created by Mustafa Ezzat on 2/26/17.
-//  Copyright © 2017 waqood. All rights reserved.
+//  Copyright © 2017 Mustafa Ezzat. All rights reserved.
 //
 
 import UIKit

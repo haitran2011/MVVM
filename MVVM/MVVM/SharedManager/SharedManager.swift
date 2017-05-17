@@ -1,9 +1,9 @@
 //
 //  SharedManager.swift
-//  MagadiHome
+//  MVVM
 //
 //  Created by Mustafa Ezzat on 5/7/17.
-//  Copyright © 2017 Waqood. All rights reserved.
+//  Copyright © 2017 Mustafa Ezzat. All rights reserved.
 //
 
 import UIKit

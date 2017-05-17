@@ -1,9 +1,9 @@
 //
 //  Cart+CoreDataClass.swift
-//  MagadiHome
+//  MVVM
 //
 //  Created by Mustafa Ezzat on 5/10/17.
-//  Copyright © 2017 Waqood. All rights reserved.
+//  Copyright © 2017 Mustafa Ezzat. All rights reserved.
 //
 
 import Foundation
