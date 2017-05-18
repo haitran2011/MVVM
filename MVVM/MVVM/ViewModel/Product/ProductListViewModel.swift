@@ -25,8 +25,9 @@ class ProductListViewModel:NSObject, APIDelegate {
             .subscribe(onNext : { (event) in
             })
             .addDisposableTo(disposeBag)
-        APIManager.sharedInstance.fetchProducts(in: categoryID, superMarketID: superMarketID, delegate: self)
+        APIManager.sharedInstance.fetchProducts(in: categoryID, superMarketID: superMarketID, companies: [], page:0, delegate: self)
     }
+
     public func getProducts() -> Variable<[ProductViewModel]> {
         return products
     }

@@ -44,15 +44,27 @@ class APIMarkets {
         }
     }
     
-    func fetchProducts(in categoryID:Int, superMarketID:Int, delegate:APIDelegate) {
+    func fetchProducts(in categoryID:Int, superMarketID:Int, companies:Array<Int>, page:Int, delegate:APIDelegate) {
+        let utilityQueue = DispatchQueue.global(qos: .utility)
+        
         delegate.requestDidStart()
-        let url = "\(APIConstants.apiUrl)\(APIConstants.Methods.FetchProducts)/\(categoryID)/\(superMarketID))"
+        let url = "\(APIConstants.apiUrl)\(APIConstants.Methods.FetchProducts)/page:\(page))"
         let headers:HTTPHeaders = ["tkn":APIConstants.token]
-        Alamofire.request(url, headers: headers).responseArray {
+        
+        var params = Parameters()
+        params["category_id"] = categoryID
+        params["supermarket_id"] = superMarketID
+        if companies.count > 0{
+            params["companies"] = companies
+        }
+        
+        Alamofire.request(url, method: .post, parameters: params, headers: headers).responseArray(queue: utilityQueue) {
             (response: DataResponse<Array<ProductModel>>) in
             if let settingsResponse = response.result.value {
                 //handle success
-                delegate .requestDidEnd(payload: settingsResponse as AnyObject)
+                DispatchQueue.main.async {
+                    delegate .requestDidEnd(payload: settingsResponse as AnyObject)
+                }
             }
         }
     }

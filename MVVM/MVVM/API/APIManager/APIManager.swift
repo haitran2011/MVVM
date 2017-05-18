@@ -26,8 +26,8 @@ class APIManager {
     func fetchCategories(in superMarketID:Int, delegate:APIDelegate) {
         APIMarkets.sharedInstance.fetchCategories(in: superMarketID, delegate: delegate)
     }
-    func fetchProducts(in categoryID:Int, superMarketID:Int, delegate:APIDelegate) {
-        APIMarkets.sharedInstance.fetchProducts(in: categoryID, superMarketID: superMarketID, delegate: delegate)
+    func fetchProducts(in categoryID:Int, superMarketID:Int, companies:Array<Int>, page:Int, delegate:APIDelegate) {
+        APIMarkets.sharedInstance.fetchProducts(in: categoryID, superMarketID: superMarketID, companies:companies, page:page, delegate: delegate)
     }
     
     // MARK: - Lifecycle Methods
