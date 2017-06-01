@@ -19,7 +19,7 @@ enum APIConstants{
         static let FetchCategories = "Supermarkets/getAllCatgories"
         static let FetchProducts = "Products/getProducts"
     }
-    static let apiUrl = "http://www.waqood.pro/MagadiHome/api/"
+    static let apiUrl = "http://www.your-base-url.com/"
 
     static let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIiwianRpIjoiNGYxZzIzYTEyYWEifQ.eyJqdGkiOiI0ZjFnMjNhMTJhYSIsImV4cCI6MTQ5Mzc2ODA4MSwiZXh0cmEiOnsiY2lkIjoiMSJ9fQ."
 }
